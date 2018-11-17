@@ -40,6 +40,8 @@ Purchase : http://www.ncodeart.com/
 	<link rel="stylesheet" href="lib/Swiper/css/swiper.min.css">
 
 	<!-- EFFECT -->
+	<link rel="stylesheet" href="lib/vegas/vegas.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/jquery.mb.YTPlayer/css/jquery.mb.YTPlayer.min.css">
 
 	<!-- TEMPLATE -->
 	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
@@ -72,17 +74,18 @@ Purchase : http://www.ncodeart.com/
 		</a><!-- / MENU-ICON -->
 		
 		<!-- CONTENT AREA -->
-		<div id="nc-main" class="nc-main bg-cover bg-cc">
+		<div id="nc-main" class="nc-main bg-cover bg-cc" data-bg="images/you-2.jpg">
 
 			<!-- SLIDESHOW -->
 			<div class="full-wh nc-background">
-				<!-- HTML5 VIDEO -->
-				<div class="full-wh vide-widget" data-vide-src="images/video/Typer"></div>
-				<!-- / HTML5 VIDEO -->
+				<!-- YOUTUBE VIDEO -->
+				<a class="videobg" 
+				data-property="{videoURL:'https://youtu.be/hpeYWdkUtcE',containment:'.nc-background',showControls:true, autoPlay:true, loop:true, vol:50, mute:true, startAt:18, opacity:1, addRaster:true, quality:'hd720', optimizeDisplay:true}"></a>
+				<!-- / YOUTUBE VIDEO -->
 			</div>
 			
 			<!-- BACKGROUND OVERLAY -->
-			<div class="nc-main--bgoverlay min-vh-h100 w100 pos-rel" data-bgcolor="rgba(0,0,0,0.3)">
+			<div class="nc-main--bgoverlay min-vh-h100 w100 pos-rel" data-bgcolor="rgba(0,0,0,0.5)">
 			
 				<!-- PAGEWRAPPER -->
 				<div class="nc-main--pagewrapper nc-activeintro">
@@ -107,13 +110,13 @@ Purchase : http://www.ncodeart.com/
 									<div class="carousel-widget" data-anim="fadeInUp" id="carousel-widget" data-items="1" data-itemrange="false" data-tdrag="false" data-mdrag="false" data-pdrag="false" data-autoplay="true" data-in="fadeIn" data-loop="true" data-hstop="true" data-hauto="true">
 										<div class="owl-carousel">
 											<div class="item">
-												<h1 class="introtext--two fs80 f-1 txt-upper bold-5" data-nc-md="fs70" data-nc-sm="fs50">NCodeart<br>Design World</h1>
+												<h1 class="introtext--two fs80 f-1 txt-upper bold-5" data-nc-md="fs70" data-nc-sm="fs50">NCodeart<br>Knowledge Hub</h1>
 											</div>
 											<div class="item">
-												<h1 class="introtext--two fs80 f-1 txt-upper bold-5" data-nc-md="fs70" data-nc-sm="fs50">Amazing<br>Design Concept</h1>
+												<h1 class="introtext--two fs80 f-1 txt-upper bold-5" data-nc-md="fs70" data-nc-sm="fs50">Book<br>Is Friend</h1>
 											</div>
 											<div class="item">
-												<h1 class="introtext--two fs80 f-1 txt-upper bold-5" data-nc-md="fs70" data-nc-sm="fs50">Large<br>Feature List</h1>
+												<h1 class="introtext--two fs80 f-1 txt-upper bold-5" data-nc-md="fs70" data-nc-sm="fs50">Improve<br>Knowledge</h1>
 											</div>
 										</div>
 									</div>
@@ -123,8 +126,8 @@ Purchase : http://www.ncodeart.com/
 							</div><!-- / INTRO TEXT -->
 							
 							<div class="mr-t-80" data-nc-sm="align-c">
-								<a href="#" data-popup="subscribe" class="nc-trigger btn btn-secondary solid bdr-2 round mr-r-20 txt-upper f-1 animated s008" data-animIn="zoomIn|0.5" data-animOut="zoomOut|0.5" data-nc-sm="mr-0 mr-10 min-px-w160">Subscribe</a>
-								<a href="#" data-popup="when" class="nc-trigger btn btn-secondary solid bdr-2 round txt-upper f-1 animated s008" data-animIn="zoomIn|0.5" data-animOut="zoomOut|0.5" data-nc-sm="mr-10 min-px-w160">Launch</a>
+								<a href="#" data-popup="subscribe" class="nc-trigger btn btn-primary solid bdr-2 round mr-r-20 txt-upper f-1 animated s008" data-animIn="zoomIn|0.5" data-animOut="zoomOut|0.5" data-nc-sm="mr-0 mr-10 min-px-w160">Subscribe</a>
+								<a href="#" data-popup="when" class="nc-trigger btn btn-primary solid bdr-2 round txt-upper f-1 animated s008" data-animIn="zoomIn|0.5" data-animOut="zoomOut|0.5" data-nc-sm="mr-10 min-px-w160">Launch</a>
 							</div>	
 
 						</div>
@@ -185,7 +188,7 @@ Purchase : http://www.ncodeart.com/
 			
 				<!-- NAVIGATION HEADER -->
 				<div class="nc-navigation--header">
-					<a href="#" class="nc-navigation--close flex-cc sq40 fs36 rd-50 btn-secondary solid bdr-1 mr-b-60"><i class="pe-7s-close"></i></a>
+					<a href="#" class="nc-navigation--close flex-cc sq40 fs36 rd-50 btn-primary solid bdr-1 mr-b-60"><i class="pe-7s-close"></i></a>
 				</div><!-- / NAVIGATION HEADER -->
 
 				<!-- NAVIGATION LIST -->
@@ -193,7 +196,7 @@ Purchase : http://www.ncodeart.com/
 					<li class="nc-navigation--li">
 						<div class="nc-navigation--box info-obj img-t g10 tiny align-c mr-b-0 pd-tiny bdr-b bdr-op-1">
 							<a href="#" data-ncpage="pages/about.html" data-pgtype="intropage" class="nc-pagelink nc-navigation--boxlink"></a>
-							<div class="img txt-secondary"><span class="iconwrp"><i class="pe-7s-home"></i></span></div>
+							<div class="img txt-primary"><span class="iconwrp"><i class="pe-7s-home"></i></span></div>
 							<div class="info">
 								<h3 class="title mini mr-b-0 bold-2 f-1">Home</h3>
 							</div>
@@ -202,8 +205,8 @@ Purchase : http://www.ncodeart.com/
 
 					<li class="nc-navigation--li">
 						<div class="nc-navigation--box info-obj img-t g10 tiny align-c mr-b-0 pd-tiny bdr-b bdr-op-1">
-							<a href="#" data-ncpage="pages/about-2.html" data-pgtype="ncajax" class="nc-pagelink nc-navigation--boxlink"></a>
-							<div class="img txt-secondary"><span class="iconwrp"><i class="pe-7s-notebook"></i></span></div>
+							<a href="#" data-ncpage="pages/about-1.html" data-pgtype="ncajax" class="nc-pagelink nc-navigation--boxlink"></a>
+							<div class="img txt-primary"><span class="iconwrp"><i class="pe-7s-notebook"></i></span></div>
 							<div class="info">
 								<h3 class="title mini mr-b-0 bold-2 f-1">About</h3>
 							</div>
@@ -212,8 +215,8 @@ Purchase : http://www.ncodeart.com/
 
 					<li class="nc-navigation--li">
 						<div class="nc-navigation--box info-obj img-t g10 tiny align-c mr-b-0 pd-tiny bdr-b bdr-op-1">
-							<a href="#" data-ncpage="pages/team-2.html" data-pgtype="ncajax" class="nc-pagelink nc-navigation--boxlink"></a>
-							<div class="img txt-secondary"><span class="iconwrp"><i class="pe-7s-users"></i></span></div>
+							<a href="#" data-ncpage="pages/team-1.html" data-pgtype="ncajax" class="nc-pagelink nc-navigation--boxlink"></a>
+							<div class="img txt-primary"><span class="iconwrp"><i class="pe-7s-users"></i></span></div>
 							<div class="info">
 								<h3 class="title mini mr-b-0 bold-2 f-1">Team</h3>
 							</div>
@@ -222,8 +225,8 @@ Purchase : http://www.ncodeart.com/
 
 					<li class="nc-navigation--li">
 						<div class="nc-navigation--box info-obj img-t g10 tiny align-c mr-b-0 pd-tiny bdr-b bdr-op-1">
-							<a href="#" data-ncpage="pages/service-2.html" data-pgtype="ncajax" class="nc-pagelink nc-navigation--boxlink"></a>
-							<div class="img txt-secondary"><span class="iconwrp"><i class="pe-7s-note2"></i></span></div>
+							<a href="#" data-ncpage="pages/service-1.html" data-pgtype="ncajax" class="nc-pagelink nc-navigation--boxlink"></a>
+							<div class="img txt-primary"><span class="iconwrp"><i class="pe-7s-note2"></i></span></div>
 							<div class="info">
 								<h3 class="title mini mr-b-0 bold-2 f-1">Services</h3>
 							</div>
@@ -233,7 +236,7 @@ Purchase : http://www.ncodeart.com/
 					<li class="nc-navigation--li">
 						<div class="nc-navigation--box info-obj img-t g10 tiny align-c mr-b-0 pd-tiny bdr-b bdr-op-1">
 							<a href="#" data-ncpage="pages/portfolio.html" data-pgtype="ncajax" class="nc-pagelink nc-navigation--boxlink"></a>
-							<div class="img txt-secondary"><span class="iconwrp"><i class="pe-7s-camera"></i></span></div>
+							<div class="img txt-primary"><span class="iconwrp"><i class="pe-7s-camera"></i></span></div>
 							<div class="info">
 								<h3 class="title mini mr-b-0 bold-2 f-1">Portfolio</h3>
 							</div>
@@ -242,8 +245,18 @@ Purchase : http://www.ncodeart.com/
 
 					<li class="nc-navigation--li">
 						<div class="nc-navigation--box info-obj img-t g10 tiny align-c mr-b-0 pd-tiny bdr-b bdr-op-1">
-							<a href="#" data-ncpage="pages/contact-2.html" data-pgtype="ncajax" class="nc-pagelink nc-navigation--boxlink"></a>
-							<div class="img txt-secondary"><span class="iconwrp"><i class="pe-7s-mail-open-file"></i></span></div>
+							<a href="#" data-ncpage="pages/clock.html" data-pgtype="ncajax" class="nc-pagelink nc-navigation--boxlink"></a>
+							<div class="img txt-primary"><span class="iconwrp"><i class="pe-7s-timer"></i></span></div>
+							<div class="info">
+								<h3 class="title mini mr-b-0 bold-2 f-1">When</h3>
+							</div>
+						</div>
+					</li>
+
+					<li class="nc-navigation--li">
+						<div class="nc-navigation--box info-obj img-t g10 tiny align-c mr-b-0 pd-tiny bdr-b bdr-op-1">
+							<a href="#" data-ncpage="pages/contact-1.html" data-pgtype="ncajax" class="nc-pagelink nc-navigation--boxlink"></a>
+							<div class="img txt-primary"><span class="iconwrp"><i class="pe-7s-mail-open-file"></i></span></div>
 							<div class="info">
 								<h3 class="title mini mr-b-0 bold-2 f-1">Contact</h3>
 							</div>
@@ -253,7 +266,7 @@ Purchase : http://www.ncodeart.com/
 					<li class="nc-navigation--li">
 						<div class="nc-navigation--box info-obj img-t g10 tiny align-c mr-b-0 pd-tiny bdr-b bdr-op-1">
 							<a href="#" data-ncpage="pages/map.html" data-pgtype="ncajax" class="nc-pagelink nc-navigation--boxlink"></a>
-							<div class="img txt-secondary"><span class="iconwrp"><i class="pe-7s-map-marker"></i></span></div>
+							<div class="img txt-primary"><span class="iconwrp"><i class="pe-7s-map-marker"></i></span></div>
 							<div class="info">
 								<h3 class="title mini mr-b-0 bold-2 f-2">Location</h3>
 							</div>
@@ -278,7 +291,7 @@ Purchase : http://www.ncodeart.com/
 					<!-- HEADER -->
 					<div class="nc-popup--header align-c">
 						<div class="title-wrapper">
-							<span class="flex-cc title--icon fs70 txt-secondary mr-b-10" data-nc-sm="fs60">
+							<span class="flex-cc title--icon fs70 txt-primary mr-b-10" data-nc-sm="fs60">
 								<i class="pe-7s-bell"></i>
 							</span>
 							<h1 class="nc-titlewrapper--tile fs50 f-1 txt-upper" data-nc-sm="fs40">Subscribe</h1>
@@ -329,7 +342,7 @@ Purchase : http://www.ncodeart.com/
 					<!-- HEADER -->
 					<div class="nc-popup--header align-c">
 						<div class="title-wrapper">
-							<span class="flex-cc title--icon fs70 txt-secondary mr-b-10" data-nc-sm="fs60">
+							<span class="flex-cc title--icon fs70 txt-primary mr-b-10" data-nc-sm="fs60">
 								<i class="pe-7s-timer"></i>
 							</span>
 							<h1 class="nc-titlewrapper--tile fs50 f-1 txt-upper" data-nc-sm="fs40">Launch</h1>
@@ -368,7 +381,6 @@ Purchase : http://www.ncodeart.com/
 	</script>
 
 	<!-- TEMPLATE -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vide/0.5.1/jquery.vide.min.js"></script>
 	<script type="text/javascript" src="lib/jquery/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="lib/jquery-validation/jquery.validate.min.js"></script>
@@ -376,6 +388,9 @@ Purchase : http://www.ncodeart.com/
 	<script type="text/javascript" src="lib/Swiper/js/swiper.jquery.min.js"></script>
 	<script type="text/javascript" data-pace-options='{ "ajax": true }' src="lib/pace/pace.min.js"></script>
 	<script type="text/javascript" src="js/nc.js"></script>
+
+	<!-- EFFECT -->
+	<script type="text/javascript" src="lib/jquery.mb.YTPlayer/jquery.mb.YTPlayer.min.js"></script>
 
 </body>
 </html>
