@@ -1,0 +1,67 @@
+{
+	"agency-01" : {
+		"bgColors" : {
+			"default" : "#1f2229",
+			"primary" : "#0099e5",
+
+			"white"   : "#fff",
+
+			"gray1"   : "#EEEEEE",
+			"gray2"   : "#F4F5F5",
+		},
+
+		"btnColors" : {
+			"default" : "#1f2229",
+			"primary" : "#0099e5",
+
+			"white"   : "#fff",
+		},
+
+		"bdrColors" : {
+			"default" : "#1f2229",
+			"primary" : "#0099e5",
+
+			"white"   : "#fff",
+		},
+
+		"txtColors" : {
+			"default" : "#1f2229",
+			"primary" : "#0099e5",
+
+			"white"   : "#fff",
+		}
+	},
+
+	"agency-02" : {
+		"bgColors" : {
+			"default" : "#1f2229",
+			"primary" : "#0099e5",
+
+			"white"   : "#fff",
+
+			"gray1"   : "#EEEEEE",
+			"gray2"   : "#F4F5F5",
+		},
+
+		"btnColors" : {
+			"default" : "#1f2229",
+			"primary" : "#0099e5",
+
+			"white"   : "#fff",
+		},
+
+		"bdrColors" : {
+			"default" : "#1f2229",
+			"primary" : "#0099e5",
+
+			"white"   : "#fff",
+		},
+
+		"txtColors" : {
+			"default" : "#1f2229",
+			"primary" : "#0099e5",
+
+			"white"   : "#fff",
+		}
+	}
+}

@@ -1,0 +1,151 @@
+/* Buttons
+=========================*/
+.btn { 
+	font-family: @font-1;
+	border-radius: 3px;
+	padding: 14px 20px;
+	font-size: 16px;
+	min-height: 45px;
+	box-sizing: border-box;
+    border: 1px solid transparent;
+    background-color: transparent;
+    line-height: 1;
+	position: relative;
+	outline: 0px auto -webkit-focus-ring-color !important;
+	font-weight: 600;
+}
+
+.btn:active, 
+.btn.active, 
+.btn:focus { box-shadow: none; }
+
+
+/* Button utilities
+=========================*/
+.btn.large {
+	padding: 18px 30px;
+	font-size: 26px;
+	min-height: 64px;
+	font-weight: 700;
+}
+.btn.medium {
+	padding: 14px 20px;
+	font-size: 16px;
+	min-height: 45px;
+}
+.btn.small {
+	padding: 10px 18px;
+	font-size: 13px;
+	min-height: 14px;
+}
+.btn.mini {
+	padding: 6px 12px;
+	font-size: 13px;
+	min-height: 26px;
+}
+.btn.tiny {
+	padding: 5px 10px 4px 10px;
+	font-size: 11px;
+	min-height: 22px;
+}
+
+.btn.large.round {
+	padding-left: 40px;
+	padding-right: 40px;
+	border-radius: 100px;
+}
+.btn.round,
+.btn.medium.round {
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 100px;
+}
+.btn.small.round {
+	padding-left: 28px;
+	padding-right: 28px;
+	border-radius: 100px;
+}
+.btn.mini.round {
+	padding-left: 22px;
+	padding-right: 22px;
+	border-radius: 100px;
+}
+.btn.tiny.round {
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 100px;
+}
+
+.btn-reset { padding: 0; line-height: 100%; }
+.btn.block { display: block; width: 100%; }
+.btn.inline-block { display: inline-block; width: auto; }
+.btn > .btn-icon,
+.btn > .btn-txt {
+	vertical-align: middle;
+}
+.btn > .btn-icon {
+	margin-right: 10px;
+	margin-top: -2px;
+}
+.btn.large > .btn-icon:not([class*="fs"]) {
+	font-size: 26px;
+}
+.btn > .btn-icon:not([class*="fs"]),
+.btn.medium > .btn-icon:not([class*="fs"]) {
+	font-size: 20px;
+}
+.btn.small > .btn-icon:not([class*="fs"]) {
+	font-size: 14px;
+	margin-right: 6px;
+}
+.btn.mini > .btn-icon:not([class*="fs"]) {
+	font-size: 13px;
+	margin-right: 6px;
+}
+.btn.tiny > .btn-icon:not([class*="fs"]) {
+	font-size: 11px;
+	margin-right: 6px;
+	margin-top: -2px;
+}
+
+/* APP Buttons
+=========================*/
+.appstore-btn { 
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	background-color: #000;
+	border-radius: 6px;
+	padding: 15px 26px 15px 64px;
+	position: relative;
+	display: inline-block;
+	font-size: 20px;
+	line-height: 1.2;
+	margin: 4px;
+	text-align: left;
+}
+.appstore-btn i { 
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	font-size: 35px;
+	width: 35px;
+	text-align: center;
+	transform: translateY(-50%);
+}
+.appstore-btn small { 
+	display: block;
+	font-size: 12px;
+	padding-left: 2px;
+}
+.appstore-btn:hover { 
+	color: #fff;
+}
+.round.appstore-btn {
+	padding-left: 70px;
+	padding-right: 30px;
+	border-radius: 100px;
+}
+.round.appstore-btn i { 
+	left: 25px;
+}
+

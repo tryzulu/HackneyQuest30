@@ -1,0 +1,56 @@
+{
+	"bgColors" : {
+		"default" : "#1f2229",
+		"primary" : "#0099e5",
+
+		"white"   : "#fff",
+
+		"gray1"   : "#EEEEEE",
+		"gray2"   : "#F4F5F5",
+
+		"dark1"   : "#2D3345",
+
+		"color1"  : "#ed1b2e",
+		"color2"  : "#00ce65",
+		"color3"  : "#881144",
+		"color4"  : "#ffa200"
+		
+		
+	},
+
+	"btnColors" : {
+		"default" : "#1f2229",
+		"primary" : "#0099e5",
+
+		"white"   : "#fff",
+
+		"color1"  : "#ed1b2e",
+		"color2"  : "#00ce65",
+		"color3"  : "#881144",
+		"color4"  : "#ffa200"
+
+	},
+
+	"bdrColors" : {
+		"default" : "#1f2229",
+		"primary" : "#0099e5",
+
+		"white"   : "#fff",
+
+		"color1"  : "#ed1b2e",
+		"color2"  : "#00ce65"
+	},
+
+	"txtColors" : {
+		"default" : "#1f2229",
+		"primary" : "#0099e5",
+
+		"white"   : "#fff",
+
+		"color1"  : "#ed1b2e",
+		"color2"  : "#00ce65",
+		"color3"  : "#881144",
+		"color4"  : "#ffa200"
+	}
+
+}

@@ -1,0 +1,115 @@
+/**
+***************************************************************
+* AUTHOR : NCodeArt
+* PROJECT : NC-Hold Coming-Soon Page
+* Purchase : http://www.ncodeart.com/
+*
+* Copyright 2015-2016 NCodeArt
+* NOTE : This file licensed to NCodeArt - http://themeforest.net/user/ncodeart and it is strictly prohibited to copy or reuse it.
+***************************************************************
+*/
+
+/**
+*****************************************************************
+* This file is licensed to NCodeArt.
+* it's not allowed to copy or reuse it Copyright NCodeArt 2015-2016
+* NCodeArt : http://www.ncodeart.com/
+*****************************************************************
+*/
+
+/*
+TABLE OF CONTENTS
+********************************************
+- COMMON
+- Z-INDEX
+- OPACITY
+- SHADOW
+- CLEARING
+- ICON BLOCKS
+- BUTTONS
+- COMMON TYPOGRAPHY
+- LIST CLASSES
+- TAG TEXT
+- TEXT TRANSFORM
+- FONTS SIZES
+- LINE HEIGHT
+- FONT WEIGHT
+- FONT FAMILY
+- FORM CONTROLS
+- ALIGNMENT
+- RADIUS
+- BORDER
+- PADDING
+- MARGIN
+- SQUARE
+- WIDTH
+- HEIGHT
+- OTHER UTILITIES
+- ANIMATION
+- MOBILE & TABLET COMMON
+- TABLET
+
+********************************************/
+
+// Core variables and mixins
+@import "import-files/variables.less";
+@import "import-files/mixins.less";
+
+// Core variables and mixins
+@import "import-files/helper-common.less";
+@import "import-files/helper-forms.less";
+@import "import-files/helper-buttons.less";
+@import "import-files/helper-borders.less";
+@import "import-files/helper-typography.less";
+@import "import-files/helper-background.less";
+@import "import-files/helper-alignment.less";
+@import "import-files/helper-padding.less";
+@import "import-files/helper-margin.less";
+@import "import-files/helper-size.less";
+@import "import-files/helper-utilities.less";
+@import "import-files/helper-animations.less";
+@import "import-files/helper-responsive.less";
+
+
+/* Loader CSS
+=========================*/
+.spinner-wrp {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 999999;
+	background-color: #fff;
+	left: 0px;
+	top: 0px;
+}
+body > .spinner-wrp {
+	position: fixed;
+}
+.spinner {
+	border: 3px solid rgba(0,0,0,0.15);
+	border-top: 3px solid rgba(0,0,0,0.5);
+	border-bottom: 3px solid rgba(0,0,0,0.5);
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	animation: spin 2s linear infinite;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -20px;
+    margin-top: -20px;
+}
+.dark.spinner-wrp {
+	background-color: #000;
+}
+.dark.spinner-wrp .spinner {
+	border: 3px solid rgba(255,255,255,0.15);
+	border-top: 3px solid rgba(255,255,255,0.5);
+	border-bottom: 3px solid rgba(255,255,255,0.5);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
