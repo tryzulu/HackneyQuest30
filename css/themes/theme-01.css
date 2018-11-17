@@ -45,20 +45,20 @@
 }
 .btn-primary {
   background-color: transparent;
-  border-color: #1665be;
-  color: #1665be;
+  border-color: #5884B4;
+  color: #5884B4;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #1665be;
-  border-color: #1665be;
+  background-color: #5884B4;
+  border-color: #5884B4;
   color: #ffffff;
 }
 .solid.btn-primary {
-  background-color: #1665be;
-  border-color: #1665be;
+  background-color: #5884B4;
+  border-color: #5884B4;
   color: #ffffff;
 }
 .solid.btn-primary:hover,
@@ -66,8 +66,8 @@
 .solid.btn-primary:active,
 .solid.btn-primary.active {
   background-color: transparent;
-  border-color: #1665be;
-  color: #1665be;
+  border-color: #5884B4;
+  color: #5884B4;
 }
 .btn-secondary {
   background-color: transparent;
@@ -179,8 +179,8 @@
   color: #ffffff;
 }
 .solid.hov-btn-primary:hover {
-  background-color: #1665be;
-  border-color: #1665be;
+  background-color: #5884B4;
+  border-color: #5884B4;
   color: #ffffff;
 }
 .solid.hov-btn-secondary:hover {
@@ -219,7 +219,7 @@
 .bdr-primary.row-sep > [class*="flex-col-"],
 .bdr-primary.form-control,
 .bdr-primary {
-  border-color: #1665be;
+  border-color: #5884B4;
 }
 .bdr-secondary,
 .bdr-secondary.row-bdr,
@@ -271,7 +271,7 @@
 .hov-bdr-primary:hover.form-control,
 .hov-bdr-primary:focus.form-control,
 .hov-bdr-primary:hover {
-  border-color: #1665be;
+  border-color: #5884B4;
 }
 .hov-bdr-secondary:hover,
 .hov-bdr-secondary:hover.row-bdr,
@@ -398,7 +398,7 @@ h6,
 .txt-primary,
 .typo-light .txt-primary,
 .txt-primary:hover {
-  color: #1665be;
+  color: #5884B4;
 }
 .txt-secondary,
 .typo-light .txt-secondary,
@@ -429,7 +429,7 @@ h6,
   color: #ed1b2e;
 }
 .hov-txt-primary:hover {
-  color: #1665be;
+  color: #5884B4;
 }
 .hov-txt-secondary:hover {
   color: #ffbf00;
@@ -451,7 +451,7 @@ a.link-default {
 }
 .link-primary,
 a.link-primary {
-  color: #1665be;
+  color: #5884B4;
 }
 .link-secondary,
 a.link-secondary {
@@ -483,7 +483,7 @@ a.link-white {
   background-color: #ed1b2e;
 }
 .bg-primary {
-  background-color: #1665be;
+  background-color: #5884B4;
 }
 .bg-secondary {
   background-color: #ffbf00;
@@ -506,7 +506,7 @@ a.link-white {
   background-color: #ed1b2e;
 }
 .hov-bg-primary:hover {
-  background-color: #1665be;
+  background-color: #5884B4;
 }
 .hov-bg-secondary:hover {
   background-color: #ffbf00;
@@ -553,32 +553,32 @@ a.link-white {
   color: #ffffff;
 }
 .tab-style1 .primary.tb-list {
-  border-bottom-color: #1665be;
+  border-bottom-color: #5884B4;
 }
 .tab-style1 .primary.tb-list > li.active {
-  background-color: #1665be;
+  background-color: #5884B4;
   color: #ffffff;
 }
 .tab-style1.side-tab:not(.tb-r) .primary.tb-list {
-  border-right-color: #1665be;
+  border-right-color: #5884B4;
 }
 .tab-style1.tb-r .primary.tb-list {
-  border-left-color: #1665be;
+  border-left-color: #5884B4;
 }
 .tab-style2 .primary.tb-list > li.active {
-  border-color: #1665be;
+  border-color: #5884B4;
   color: #ffffff;
 }
 .tab-style2.side-tab .primary.tb-list > li.active {
-  border-color: #1665be;
+  border-color: #5884B4;
   color: #ffffff;
 }
 .tab-style3 .primary.tb-list {
-  background-color: #1665be;
+  background-color: #5884B4;
 }
 .tab-style4 .primary.tb-list > li.active {
-  background-color: #1665be;
-  border-color: #1665be;
+  background-color: #5884B4;
+  border-color: #5884B4;
   color: #ffffff;
 }
 .tab-style1 .secondary.tb-list {
