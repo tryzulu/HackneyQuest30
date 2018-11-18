@@ -19,7 +19,20 @@
 /*	MOBILE & TABLET COMMON
 /*===========================================*/
 @media (min-width: 200px) and (max-width: 991px) {
-	
+    #nc-intropage {
+        padding-top: 40px;
+    }
+    .nc-logo {
+        display: none;
+    }
+	.carousel-widget.owl0 {
+        height: 300px;
+    }
+    p.fs24 {
+        max-width: 80% !important;
+        margin: 0 auto;
+    }
+
 }
 
 
@@ -35,13 +48,26 @@
 /*	MOBILE
 /*===========================================*/
 @media (min-width: 200px) and (max-width: 767px) {
-	
+	p.fs24 {
+        max-width: 90% !important;
+    }
 }
 @media (min-width: 600px) and (max-width: 767px) {
 }
 @media (min-width: 480px) and (max-width: 599px) {
-
+    .container .mr-t-80 {
+        margin-top: 40px !important;
+    }
+    p.fs24 {
+        margin-top: 30px !important;
+    }
 }
 @media (min-width: 200px) and (max-width: 479px) {
 
+}
+
+@media (min-width: 400px) and (max-height: 400px) {
+    .carousel-widget.owl0 {
+        height: 200px !important;
+    }
 }
