@@ -17,6 +17,13 @@
 */
 /* Button colors
 =========================*/
+.text-color-blue {
+  color: #347AAE !important;
+}
+.text-color-green {
+  color: #4EB697 !important;
+}
+
 .btn-default {
   background-color: transparent;
   border-color: #ed1b2e;
@@ -45,20 +52,20 @@
 }
 .btn-primary {
   background-color: transparent;
-  border-color: #5884B4;
-  color: #5884B4;
+  border-color: #4EB697;
+  color: #4EB697;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #5884B4;
-  border-color: #5884B4;
+  background-color: #4EB697;
+  border-color: #4EB697;
   color: #ffffff;
 }
 .solid.btn-primary {
-  background-color: #5884B4;
-  border-color: #5884B4;
+  background-color: #4EB697;
+  border-color: #4EB697;
   color: #ffffff;
 }
 .solid.btn-primary:hover,
@@ -66,25 +73,25 @@
 .solid.btn-primary:active,
 .solid.btn-primary.active {
   background-color: transparent;
-  border-color: #5884B4;
-  color: #5884B4;
+  border-color: #4EB697;
+  color: #4EB697;
 }
 .btn-secondary {
   background-color: transparent;
-  border-color: #ffbf00;
-  color: #ffbf00;
+  border-color: #347AAE;
+  color: #347AAE;
 }
 .btn-secondary:hover,
 .btn-secondary:focus,
 .btn-secondary:active,
 .btn-secondary.active {
-  background-color: #ffbf00;
-  border-color: #ffbf00;
+  background-color: #347AAE;
+  border-color: #347AAE;
   color: #ffffff;
 }
 .solid.btn-secondary {
-  background-color: #ffbf00;
-  border-color: #ffbf00;
+  background-color: #347AAE;
+  border-color: #347AAE;
   color: #ffffff;
 }
 .solid.btn-secondary:hover,
@@ -92,8 +99,8 @@
 .solid.btn-secondary:active,
 .solid.btn-secondary.active {
   background-color: transparent;
-  border-color: #ffbf00;
-  color: #ffbf00;
+  border-color: #347AAE;
+  color: #347AAE;
 }
 .btn-dark {
   background-color: transparent;
