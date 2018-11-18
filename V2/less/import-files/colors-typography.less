@@ -1,0 +1,50 @@
+/* Common typography
+=========================*/
+h1, h2, h3, h4, h5, h6,
+.hd-1, .hd-2, .hd-3, .hd-4, .hd-5, .hd-6,
+.title-sub { color: @dark; }
+
+.typo-light h1, 
+.typo-light h2, 
+.typo-light h3, 
+.typo-light h4, 
+.typo-light h5, 
+.typo-light h6,
+.typo-light .title:not([class*="txt-"]),
+.typo-light .title-sub:not([class*="txt-"]),
+.typo-light .pg-path,
+.typo-light .list-3:not([class*="txt-"]),
+.typo-light .typo:not([class*="txt-"]),
+.typo-light p:not([class*="txt-"]) { color: @white; }
+
+
+/* List classes
+=========================*/
+.dark.list-2,
+.dark.list-2 li > i {
+	color: @dark;
+}
+
+
+/* Tag text
+=========================*/
+.tag-text {
+	background-color: @dark;
+	color: @white;
+}
+
+/* Text colors
+=========================*/
+.txt-colors(@all-txt-color-names; @all-txt-colors; @all-txt-color-length);
+.txt-inherit {
+	color: inherit;
+}
+
+/* Text hover colors
+=========================*/
+.txt-hcolors(@all-txt-color-names; @all-txt-colors; @all-txt-color-length);
+
+/* Link colors
+=========================*/
+.link-colors(@all-txt-color-names; @all-txt-colors; @all-txt-color-length);
+

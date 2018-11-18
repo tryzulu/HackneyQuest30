@@ -1,0 +1,339 @@
+// Utility classes
+// =========================================
+.rgbaColorIn(@color, @opacity : 1){
+  @result: rgba( red(@color), green(@color), blue(@color), @opacity );
+}
+
+// Generate font classes
+// =========================================
+.f-sizes(@n, @gap, @type: all, @i: 0) when (@i =< @n) {
+	.fs@{i} { font-size: unit(@i, px); }
+	.f-sizes(@n, @gap, @type, (@i + @gap));
+}
+
+.f-line-sizes(@n, @gap, @type: all, @i: 0) when (@i =< @n) {
+	.lh-@{i} { line-height: ((@i + 10) / 10); }
+	.f-line-sizes(@n, @gap, @type, (@i + @gap));
+}
+
+
+// Generate background colors
+// =========================================
+.bg-colors(@names; @colors; @index) when (iscolor(extract(@colors, @index))) and (@index >= 0) {
+    .bg-colors(@names; @colors; (@index - 1)); // decrement.
+ 
+	@name  : extract(@names, @index);
+	@color : extract(@colors, @index);
+	
+	.bg-@{name} {
+		background-color: @color;
+	}
+}
+
+.bg-hcolors(@names; @colors; @index) when (iscolor(extract(@colors, @index))) and (@index >= 0) {
+    .bg-hcolors(@names; @colors; (@index - 1)); // decrement.
+ 
+	@name  : extract(@names, @index);
+	@color : extract(@colors, @index);
+	
+	.hov-bg-@{name}:hover {
+		background-color: @color;
+	}
+}
+
+// Generate typography colors
+// =========================================
+.txt-colors(@names; @colors; @index) when (iscolor(extract(@colors, @index))) and (@index >= 0) {
+    .txt-colors(@names; @colors; (@index - 1)); // decrement.
+ 
+	@name  : extract(@names, @index);
+	@color : extract(@colors, @index);
+	
+	.txt-@{name},
+	.typo-light .txt-@{name},
+	.txt-@{name}:hover {
+		color: @color;
+	}
+}
+
+.txt-hcolors(@names; @colors; @index) when (iscolor(extract(@colors, @index))) and (@index >= 0) {
+    .txt-hcolors(@names; @colors; (@index - 1)); // decrement.
+ 
+	@name  : extract(@names, @index);
+	@color : extract(@colors, @index);
+	
+	.hov-txt-@{name}:hover {
+		color: @color;
+	}
+}
+.link-colors(@names; @colors; @index) when (iscolor(extract(@colors, @index))) and (@index >= 0) {
+    .link-colors(@names; @colors; (@index - 1)); // decrement.
+ 
+	@name  : extract(@names, @index);
+	@color : extract(@colors, @index);
+	
+	.link-@{name},
+	a.link-@{name} {
+		color: @color;
+	}
+}
+
+
+// Generate navigation glass values
+// =========================================
+.nav-glass(@n, @i: 1) when (@i < @n) {
+
+	.bg-glass-dark-0@{i} {
+		background-color: rgba(0,0,0, (@i * 100% / @n));
+	}
+	
+	.bg-glass-light-0@{i} {
+		background-color: rgba(255,255,255, (@i * 100% / @n));
+	}
+	
+	.nav-glass(@n, (@i + 1));
+}
+
+
+// Generate border colors
+// =========================================
+.bdr-colors(@names; @colors; @index) when (iscolor(extract(@colors, @index))) and (@index >= 0) {
+    .bdr-colors(@names; @colors; (@index - 1)); // decrement.
+ 
+	@name  : extract(@names, @index);
+	@color : extract(@colors, @index);
+	
+	.bdr-@{name},
+	.bdr-@{name}.row-bdr,
+	.bdr-@{name}.row-bdr > [class*="flex-col-"],
+	.bdr-@{name}.row-sep > [class*="flex-col-"], 
+	.bdr-@{name}.form-control,
+	.bdr-@{name} {
+		border-color: @color;
+	}
+}
+
+.bdr-hcolors(@names; @colors; @index) when (iscolor(extract(@colors, @index))) and (@index >= 0) {
+    .bdr-hcolors(@names; @colors; (@index - 1)); // decrement.
+ 
+	@name  : extract(@names, @index);
+	@color : extract(@colors, @index);
+	
+	.hov-bdr-@{name}:hover,
+	.hov-bdr-@{name}:hover.row-bdr,
+	.hov-bdr-@{name}:hover.row-bdr > [class*="flex-col-"],
+	.hov-bdr-@{name}:hover.row-sep > [class*="flex-col-"], 
+	.hov-bdr-@{name}:hover.form-control,
+	.hov-bdr-@{name}:focus.form-control,
+	.hov-bdr-@{name}:hover {
+		border-color: @color;
+	}
+}
+
+
+// Generate border light
+// =========================================
+.bdr-light(@n, @i: 1) when (@i =< @n) {
+	
+	.bdr-op-light-@{i},
+	.bdr-op-light-@{i}.row-bdr,
+	hr.bdr-op-light-@{i},
+	.bdr-op-light-@{i}.row-bdr > [class*="flex-col-"],
+	.bdr-op-light-@{i}.row-sep > [class*="flex-col-"], 
+	.bdr-op-light-@{i}.form-control:hover,
+	.bdr-op-light-@{i}.form-control:focus,
+	.hov-bdr-op-light-@{i}:hover {
+		border-color: rgba(255,255,255, (@i * 100% / @n));
+	}
+	.bdr-light(@n, (@i + 1));
+}
+
+// Generate border dark
+// =========================================
+.bdr-dark(@n, @i: 1) when (@i =< @n) {
+
+	.bdr-op-@{i},
+	.bdr-op-@{i}.row-bdr,
+	hr.bdr-op-@{i},
+	.bdr-op-@{i}.row-bdr > [class*="flex-col-"],
+	.bdr-op-@{i}.row-sep > [class*="flex-col-"], 
+	.bdr-op-@{i}.form-control:hover,
+	.bdr-op-@{i}.form-control:focus,
+	.hov-bdr-op-@{i}:hover {
+		border-color: rgba(0,0,0, (@i * 100% / @n));
+	}
+	.bdr-dark(@n, (@i + 1));
+}
+
+// Tabs colors
+// =========================================
+.tb-fcolor-mixin (@a) when (@a = ~"white"), (@a = ~"gray") { color: @dark; }
+.tb-fcolor-mixin (@a) when (default()) { color: @white; }
+
+.tab-colors(@names; @colors; @index) when (iscolor(extract(@colors, @index))) and (@index >= 0) {
+    .tab-colors(@names; @colors; (@index - 1)); // decrement.
+ 
+	@name  : extract(@names, @index);
+	@color : extract(@colors, @index);
+
+
+	.tab-style1 {
+		.@{name}.tb-list {
+			border-bottom-color: @color;
+			> li.active {
+				background-color: @color;
+				.tb-fcolor-mixin(@name);
+			}
+		}
+	}
+	.tab-style1.side-tab:not(.tb-r) .@{name}.tb-list {
+		border-right-color: @color;
+	}
+	.tab-style1.tb-r .@{name}.tb-list {
+		border-left-color: @color;
+	}
+
+	.tab-style2 {
+		.@{name}.tb-list {
+			> li.active {
+				border-color: @color;
+				.tb-fcolor-mixin(@name);
+			}
+		}
+	}
+	.tab-style2.side-tab .@{name}.tb-list > li.active {
+		border-color: @color;
+		.tb-fcolor-mixin(@name);
+	}
+	
+	.tab-style3 {
+		.@{name}.tb-list {
+			background-color: @color;
+		}
+	}
+	.tab-style4 {
+		.@{name}.tb-list {
+			> li.active {
+				background-color: @color;
+				border-color: @color;
+				.tb-fcolor-mixin(@name);
+			}
+		}	
+	}
+	
+}
+
+// Generate button colors
+// =========================================
+.fcolor-mixin (@a) when (@a = ~"white"), (@a = ~"gray") { color: @dark; }
+.fcolor-mixin (@a) when (default()) { color: @white; }
+
+.btn-colors(@names; @colors; @index) when (iscolor(extract(@colors, @index))) and (@index >= 0) {
+    .btn-colors(@names; @colors; (@index - 1)); // decrement.
+ 	
+ 	@name  : extract(@names, @index);
+	@color : extract(@colors, @index);
+	
+	// Line buttons
+	.btn-@{name} {
+		background-color: transparent;
+		border-color: @color;
+		color: @color;
+	}
+	.btn-@{name}:hover,
+	.btn-@{name}:focus,
+	.btn-@{name}:active,
+	.btn-@{name}.active {
+		background-color: @color;
+		border-color: @color;
+		.fcolor-mixin(@name);
+	}
+
+	// Solid buttons
+	.solid.btn-@{name} {
+		background-color: @color;
+		border-color: @color;
+		.fcolor-mixin(@name);
+	}
+	.solid.btn-@{name}:hover,
+	.solid.btn-@{name}:focus,
+	.solid.btn-@{name}:active,
+	.solid.btn-@{name}.active {
+		background-color: transparent;
+		border-color: @color;
+		color: @color;
+	}
+
+}
+
+.btn-hcolors(@names; @colors; @index) when (iscolor(extract(@colors, @index))) and (@index >= 0) {
+    .btn-hcolors(@names; @colors; (@index - 1)); // decrement.
+ 	
+ 	@name  : extract(@names, @index);
+	@color : extract(@colors, @index);
+	
+	.solid.hov-btn-@{name}:hover {
+		background-color: @color;
+		border-color: @color;
+		.fcolor-mixin(@name);
+	}
+}
+
+
+// Generate margin classes
+// =========================================
+.mr-mixin (@a, @i) when (@a = all) 		{ .mr-@{i} { margin: unit(@i, px);} }
+.mr-mixin (@a, @i) when (@a = top) 		{ .mr-t-@{i} { margin-top: unit(@i, px); } }
+.mr-mixin (@a, @i) when (@a = right) 	{ .mr-r-@{i}, .info-obj.img-r.g@{i} .info { margin-right: unit(@i, px); } }
+.mr-mixin (@a, @i) when (@a = bottom) 	{ .mr-b-@{i}, .info-obj.img-t.g@{i} .img  { margin-bottom: unit(@i, px); } }
+.mr-mixin (@a, @i) when (@a = left) 	{ .mr-l-@{i}, .info-obj.img-l.g@{i} .info { margin-left: unit(@i, px); } }
+.mr-mixin (@a, @i) when (@a = tb)		{ .mr-tb-@{i} { margin-top: unit(@i, px); margin-bottom: unit(@i, px); } }
+.mr-mixin (@a, @i) when (@a = lr)		{ .mr-lr-@{i} { margin-left: unit(@i, px); margin-right: unit(@i, px); } }
+.mr(@n, @gap, @type: all, @i: 0) when (@i =< @n) {
+	.mr-mixin(@type, @i);
+	.mr(@n, @gap, @type, (@i + @gap));
+}
+
+
+// Generate padding classes
+// =========================================
+.pd-mixin (@a, @i) when (@a = all) 		{ .pd-@{i} { padding: unit(@i, px);} }
+.pd-mixin (@a, @i) when (@a = top) 		{ .pd-t-@{i} { padding-top: unit(@i, px); } }
+.pd-mixin (@a, @i) when (@a = right) 	{ .pd-r-@{i} { padding-right: unit(@i, px); } }
+.pd-mixin (@a, @i) when (@a = bottom) 	{ .pd-b-@{i} { padding-bottom: unit(@i, px); } }
+.pd-mixin (@a, @i) when (@a = left) 	{ .pd-l-@{i} { padding-left: unit(@i, px); } }
+.pd-mixin (@a, @i) when (@a = tb)		{ .pd-tb-@{i} { padding-top: unit(@i, px); padding-bottom: unit(@i, px); } }
+.pd-mixin (@a, @i) when (@a = lr)		{ .pd-lr-@{i} { padding-left: unit(@i, px); padding-right: unit(@i, px); } }
+.pd(@n, @gap, @type: all, @i: 0) when (@i =< @n) {
+	.pd-mixin(@type, @i);
+	.pd(@n, @gap, @type, (@i + @gap));
+}
+
+
+// Generate size classes
+// =========================================
+.wh-mixin (@a, @i) when (@a = sq) 		{ .sq@{i} { width: unit(@i, px); height: unit(@i, px); } }
+
+.wh-mixin (@a, @i) when (@a = vw) 		{ .vw@{i} { width: unit(@i, vw); } }
+.wh-mixin (@a, @i) when (@a = wper) 	{ .w@{i} { width: unit(@i, %); } }
+.wh-mixin (@a, @i) when (@a = wpx) 		{ .px-w@{i} { width: unit(@i, px); } }
+.wh-mixin (@a, @i) when (@a = wmin-px) 	{ .min-px-w@{i} { min-width: unit(@i, px); } }
+.wh-mixin (@a, @i) when (@a = wmin) 	{ .min-w@{i} { min-width: unit(@i, %); } }
+.wh-mixin (@a, @i) when (@a = wmax-px) 	{ .max-px-w@{i} { max-width: unit(@i, px); } }
+.wh-mixin (@a, @i) when (@a = wmax) 	{ .max-w@{i} { max-width: unit(@i, %); } }
+
+.wh-mixin (@a, @i) when (@a = vh) 		{ .vh@{i} { height: unit(@i, vh); } }
+.wh-mixin (@a, @i) when (@a = hper) 	{ .h@{i} { height: unit(@i, %); } }
+.wh-mixin (@a, @i) when (@a = hpx) 		{ .px-h@{i} { height: unit(@i, px); } }
+.wh-mixin (@a, @i) when (@a = hmin-px) 	{ .min-px-h@{i} { min-height: unit(@i, px); } }
+.wh-mixin (@a, @i) when (@a = hmin-vh) 	{ .min-vh-h@{i} { min-height: unit(@i, vh); } }
+.wh-mixin (@a, @i) when (@a = hmin) 	{ .min-h@{i} { min-height: unit(@i, %); } }
+.wh-mixin (@a, @i) when (@a = hmax-px) 	{ .max-px-h@{i} { max-height: unit(@i, px); } }
+.wh-mixin (@a, @i) when (@a = hmax) 	{ .max-h@{i} { max-height: unit(@i, %); } }
+
+.wh(@n, @gap, @type: all, @i: 0) when (@i =< @n) {
+	.wh-mixin(@type, @i);
+	.wh(@n, @gap, @type, (@i + @gap));
+}
+
+

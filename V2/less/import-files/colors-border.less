@@ -1,0 +1,22 @@
+/* Border other colors
+=========================*/
+.bdr-colors(@all-bdr-color-names; @all-bdr-colors; @all-bdr-color-length);
+
+/* Border other hover colors
+=========================*/
+.bdr-hcolors(@all-bdr-color-names; @all-bdr-colors; @all-bdr-color-length);
+
+/* Border utility
+=========================*/
+.bdr-t-glass { border-top-color: transparent; }
+.bdr-r-glass { border-right-color: transparent; }
+.bdr-b-glass { border-bottom-color: transparent; }
+.bdr-l-glass { border-left-color: transparent; }
+
+.bdr-n, .bdr-n:hover, .bdr-n:focus { border: none; }
+.bdr-t-n { border-top: none; }
+.bdr-r-n { border-right: none; }
+.bdr-b-n { border-bottom: none; }
+.bdr-l-n { border-left: none; }
+
+[class*="btn-"].bdr-glass, [class*="btn-"].bdr-glass:hover, [class*="btn-"].bdr-glass:focus { border-color: transparent; }
