@@ -1969,7 +1969,7 @@ a:not([class*="btn"]):focus {
 /*----------  PAGE WRAPPER  ----------*/
 #nc-main {
   position: relative;
-  height: 120vh;
+  height: 100vh;
   overflow-x: hidden;
   -webkit-box-shadow: 0 0 30px #241d20;
           box-shadow: 0 0 30px #241d20;
