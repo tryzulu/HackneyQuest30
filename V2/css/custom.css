@@ -19,7 +19,20 @@
 /*	MOBILE & TABLET COMMON
 /*===========================================*/
 @media (min-width: 200px) and (max-width: 991px) {
-	
+    #nc-intropage {
+        padding-top: 40px;
+    }
+    .nc-logo {
+        display: none;
+    }
+	.carousel-widget.owl0 {
+        height: 300px;
+    }
+    p.fs24 {
+        max-width: 80% !important;
+        margin: 0 auto;
+    }
+
 }
 
 
@@ -35,7 +48,9 @@
 /*	MOBILE
 /*===========================================*/
 @media (min-width: 200px) and (max-width: 767px) {
-	
+	p.fs24 {
+        max-width: 90% !important;
+    }
 }
 @media (min-width: 600px) and (max-width: 767px) {
 }
