@@ -115,27 +115,6 @@
 	}	
 
 }
-@media (min-width: 200px) and (max-width: 479px) {
-
-	/*----------  CLOCK  ----------*/
-	.countdown-widget .dash {
-		padding: 0 10px;
-	}
-	.countdown-widget .inner-dash {
-		font-size: 24px;
-		min-width: 38px;
-	}
-	.nc-footer a .mobile {
-		display: inline-block !important;
-	}	
-	.nc-footer a .desktop {
-		display: none;
-	}
-	.carousel-widget.owl0 {
-		height: 300px !important;
-	}		
-	
-}
 
 @media (max-height: 800px) and (min-width: 992px)  {
 
@@ -185,5 +164,36 @@
 	.container .mr-t-80 {
     margin-top: 40px !important;
   }
+	
+}
+@media (min-width: 200px) and (max-width: 479px) {
+
+	/*----------  CLOCK  ----------*/
+	.countdown-widget .dash {
+		padding: 0 10px;
+	}
+	.countdown-widget .inner-dash {
+		font-size: 24px;
+		min-width: 38px;
+	}
+	.nc-footer a .mobile {
+		display: inline-block !important;
+	}	
+	.nc-footer a .desktop {
+		display: none;
+	}
+	.carousel-widget.owl0 {
+		height: 150px !important;
+	}
+	.introtext .owl-carouseld h1 {
+		font-size: 35px;
+	}		
+	
+}
+
+@media (min-width: 200px) and (max-width: 350px) {
+	.carousel-widget.owl0 {
+		height: 200px !important;
+	}	
 	
 }
