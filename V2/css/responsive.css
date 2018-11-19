@@ -1,19 +1,32 @@
-/**
-***************************************************************
-* AUTHOR : NCodeArt
-* PROJECT : NC-Hold Coming-Soon Page
-* Purchase : http://www.ncodeart.com/
-*
-* Copyright 2015-2016 NCodeArt
-* NOTE : This file licensed to NCodeArt - http://themeforest.net/user/ncodeart and it is strictly prohibited to copy or reuse it.
-***************************************************************
-*/
-/**
-*****************************************************************
-* This file is licensed to NCodeArt.
-* it's not allowed to copy or reuse it Copyright NCodeArt 2015-2016
-* NCodeArt : http://www.ncodeart.com/
-*****************************************************************
+/*
+
+,d88b.d88b,      ,d88b.d88b,	
+88888888888      88888888888
+`Y8888888Y'      `Y8888888Y'
+  `Y888Y'          `Y888Y'
+    `Y'              `Y'
+
+███████╗███████╗██████╗  ██████╗                  
+╚══███╔╝██╔════╝██╔══██╗██╔═══██╗                 
+  ███╔╝ █████╗  ██████╔╝██║   ██║                 
+ ███╔╝  ██╔══╝  ██╔══██╗██║   ██║                 
+███████╗███████╗██║  ██║╚██████╔╝                 
+╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝                  
+                                                  
+████████╗ ██████╗                                 
+╚══██╔══╝██╔═══██╗                                
+   ██║   ██║   ██║                                
+   ██║   ██║   ██║                                
+   ██║   ╚██████╔╝                                
+   ╚═╝    ╚═════╝                                 
+                                                  
+██████╗ ███████╗███████╗██╗ ██████╗ ███╗   ██╗    
+██╔══██╗██╔════╝██╔════╝██║██╔════╝ ████╗  ██║    
+██║  ██║█████╗  ███████╗██║██║  ███╗██╔██╗ ██║    
+██║  ██║██╔══╝  ╚════██║██║██║   ██║██║╚██╗██║    
+██████╔╝███████╗███████║██║╚██████╔╝██║ ╚████║    
+╚═════╝ ╚══════╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝    
+
 */
 
 
@@ -32,7 +45,9 @@
 /*	MOBILE & TABLET COMMON
 /*===========================================*/
 @media (min-width: 200px) and (max-width: 991px) {
-	
+	.nc-footer a p {
+		float: none !important;
+	}	
 }
 
 
@@ -52,7 +67,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-	
+	.nc-footer {
+		position: absolute;
+	}
 }
 
 /*===========================================*/
@@ -70,6 +87,9 @@
 	
 }
 @media (min-width: 600px) and (max-width: 767px) {
+	.nc-footer {
+		position: absolute;
+	}
 }
 @media (min-width: 480px) and (max-width: 599px) {
 
@@ -81,6 +101,12 @@
 		font-size: 26px;
 		min-width: 40px;
 	}
+	.nc-footer a .mobile {
+		display: inline-block !important;
+	}	
+	.nc-footer a .desktop {
+		display: none;
+	}	
 
 }
 @media (min-width: 200px) and (max-width: 479px) {
@@ -93,5 +119,11 @@
 		font-size: 24px;
 		min-width: 38px;
 	}
+	.nc-footer a .mobile {
+		display: inline-block !important;
+	}	
+	.nc-footer a .desktop {
+		display: none;
+	}	
 	
 }
