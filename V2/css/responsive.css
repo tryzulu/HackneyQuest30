@@ -47,6 +47,9 @@
 @media (min-width: 200px) and (max-width: 991px) {
 	.nc-footer a p {
 		float: none !important;
+	}
+	.full-wh.nc-background {
+		position: fixed;
 	}	
 }
 
@@ -106,6 +109,9 @@
 	}	
 	.nc-footer a .desktop {
 		display: none;
+	}
+	.carousel-widget.owl0 {
+		height: 300px !important;
 	}	
 
 }
@@ -124,6 +130,60 @@
 	}	
 	.nc-footer a .desktop {
 		display: none;
-	}	
+	}
+	.carousel-widget.owl0 {
+		height: 300px !important;
+	}		
+	
+}
+
+@media (max-height: 800px) and (min-width: 992px)  {
+
+	.introtext .owl-carouseld h1 {
+		font-size: 65px;
+	}
+	.introtext p {
+		font-size: 22px;
+	}
+	.nc-logo img {
+		height: 90px !important;
+	}
+	
+}
+
+@media (max-height: 800px) and (max-width: 991px)  {
+
+	.introtext .owl-carouseld h1 {
+		font-size: 65px;
+	}
+	.introtext p {
+		font-size: 22px;
+	}
+	.carousel-widget.owl0 {
+		height: 200px !important;
+	}
+	.nc-logo {
+		display: inline-block !important;
+		margin-bottom: 0;
+	}
+	.nc-logo img {
+		height: 90px !important;
+	}
+	.nc-sociallink {
+		display: none !important;
+	}
+	
+}
+@media (max-height: 600px) {
+
+	.introtext .owl-carouseld h1 {
+		font-size: 50px;
+	}
+	.introtext p {
+		font-size: 20px;
+	}
+	.container .mr-t-80 {
+    margin-top: 40px !important;
+  }
 	
 }
