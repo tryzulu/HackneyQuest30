@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "hackneyquest30-26e30"
+    "default": "hackneyquest30-26e30",
+    "prod": "hackneyquest30-26e30"
   }
 }
